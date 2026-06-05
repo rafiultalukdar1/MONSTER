@@ -1,0 +1,248 @@
+/*
+====================================
+Medium Screen - Others
+====================================
+*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .gap-x-40 {
+        row-gap: 50px;
+    }
+    .container {
+        max-width: 960px;
+    }
+    .menu-items ul {
+        gap: 20px;
+    }
+    .menu-logo-left a img {
+        max-width: 280px;
+    }
+    .menu-logo-right img {
+        max-width: 120px;
+    }
+    .home-banner-area {
+        margin-top: -130px;
+    }
+    .home-banner-area-right {
+        top: -50px;
+        right: 0;
+    }
+    .home-banner-area-right img {
+        max-width: 480px;
+    }
+    .home-banner-area-left-image img {
+        max-width: 480px;
+    }
+    .home-banner-area-left-para p {
+        font-size: 18px;
+    }
+    .home-banner-area-left-para {
+        max-width: 420px;
+    }
+    .home-banner-area-left-button {
+        gap: 20px;
+    }
+    .home-banner-area-left-button a {
+        flex: 0 0 210px;
+    }
+    .header-section {
+        min-height: 520px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/*
+====================================
+Small Screen - Tablate
+====================================
+*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .gap-x-40 {
+        row-gap: 45px;
+    }
+    .container {
+        max-width: 720px;
+    }
+    .menu-logo-left a img {
+        max-width: 220px;
+    }
+    .menu-logo-right, .menu-items {
+        display: none;
+    }
+    .menu-area {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .menu-bar {
+        display: block;
+    }
+    .home-banner-area {
+        position: initial;
+        margin-top: 0;
+    }
+    .home-banner-area-right {
+        position: initial;
+        right: initial;
+        top: initial;
+    }
+    .home-banner-area {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+    .home-banner-area-left {
+        order: 2;
+    }
+    .home-banner-area-right {
+        order: 1;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .home-banner-area-right img {
+        max-width: 450px;
+    }
+    .home-banner-area-left-image img {
+        max-width: 550px;
+    }
+    .home-banner-area-left-button {
+        gap: 20px;
+    }
+    .home-banner-area-left-button a {
+        flex: 0 0 200px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/*
+====================================
+Xtra Small Screen - Small Mobile
+====================================
+*/
+@media screen and (max-width: 767px) {
+    .gap-x-40 {
+        row-gap: 38px;
+    }
+    .container {
+        max-width: 540px;
+    }
+    .menu-logo-left a img {
+        max-width: 220px;
+    }
+    .menu-logo-right, .menu-items {
+        display: none;
+    }
+    .menu-area {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .menu-bar {
+        display: block;
+    }
+    .menu-bar svg {
+        width: 32px;
+    }
+    .menu-logo-left a img {
+        max-width: 200px;
+    }
+    .home-banner-area {
+        position: initial;
+        margin-top: 0;
+    }
+    .home-banner-area-right {
+        position: initial;
+        right: initial;
+        top: initial;
+    }
+    .home-banner-area {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+    .home-banner-area-left {
+        order: 2;
+    }
+    .home-banner-area-right {
+        order: 1;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .home-banner-area-right img {
+        max-width: 380px;
+    }
+    .home-banner-area-left-image img {
+        max-width: 450px;
+    }
+    .home-banner-area-left-para p {
+        font-size: 18px;
+    }
+    .home-banner-area-left-button {
+        gap: 12px;
+    }
+    .home-banner-area-left-button a {
+        flex: 0 0 200px;
+    }
+
+
+
+
+
+}
+
+@media screen and (max-width: 575px) {
+    
+    .menu-hamburger i {
+        font-size: 20px;
+    }
+    .home-banner-area-left-para p {
+        font-size: 15px;
+    }
+    .home-banner-area-left-button {
+        flex-direction: column;
+        align-items: start;
+        gap: 8px;
+    }
+    .home-banner-area-left-button a {
+        flex: initial;
+    }
+    .home-banner-area-right img {
+        max-width: 290px;
+    }
+    .home-banner-area-left-image img {
+        max-width: 310px;
+    }
+    .home-banner-area-left-button a img {
+        max-width: 190px;
+    }
+
+
+
+
+
+    
+}

@@ -32,15 +32,48 @@ document.addEventListener('DOMContentLoaded', function () {
     const menuArea = document.querySelector('.menu-section');
 
     window.addEventListener('scroll', () => {
-
-        if (window.scrollY > 100) {
+        if (window.scrollY > 200) {
+            document.body.style.paddingTop = menuArea.offsetHeight + 'px';
             menuArea.classList.add('sticky-nav');
         } else {
+            document.body.style.paddingTop = '0px';
             menuArea.classList.remove('sticky-nav');
         }
-
     });
 
+
+    // Featured Slider
+    const featuredSlider = new Swiper('.featured-slider', {
+        slidesPerView: 6,
+        spaceBetween: 12,
+        loop: true,
+        speed: 1000,
+
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
+
+        breakpoints: {
+            0: {
+                slidesPerView: 1.5,
+                spaceBetween: 8,
+            },
+            576: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            992: {
+                slidesPerView: 4,
+            },
+            1200: {
+                slidesPerView: 6,
+            }
+        }
+    });
 
 
 

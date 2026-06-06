@@ -45,9 +45,21 @@ Medium Screen - Others
         flex: 0 0 210px;
     }
     .header-section {
-        min-height: 520px;
+        min-height: 390px;
+    }
+    .home-banner {
+        padding-top: 150px;
     }
 
+    .featured-heading div:nth-child(3) a img {
+        max-width: 220px;
+    }
+    .aboutus-area-content p {
+        font-size: 15px;
+    }
+    .home-footer-content-right p br {
+        display: none;
+    }
 
 
 
@@ -120,20 +132,63 @@ Small Screen - Tablate
     .home-banner-area-left-button a {
         flex: 0 0 200px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .home-what-items {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 30px;
+    }
+    .home-what {
+        margin-top: -40px;
+    }
+    .featured-section {
+        margin-top: -35px;
+    }
+    .home-what-single-items:nth-child(4)::after {
+        display: none;
+    }
+    .featured-heading div:nth-child(3) {
+        display: none;
+    }
+    .featured-heading div:first-child {
+        display: none;
+    }
+    .featured-heading {
+        padding-top: 50px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .featured-last-button {
+        display: block;
+    }
+    .featured-heading div:nth-child(2) {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    .featured-last-button a img {
+        max-width: 300px;
+    }
+    .aboutus-area {
+        gap: 8px;
+    }
+    .aboutus-area-content p {
+        font-size: 14px;
+    }
+    .aboutus-area-content {
+        padding-top: 30px;
+    }
+    .ugly-area {
+        grid-template-columns: 25% 45% 30%;
+    }
+    .home-footer-content-right p br {
+        display: none;
+    }
+    .home-footer-content-right p {
+        font-size: 15px;
+    }
+    .home-footer-content div:first-child {
+        flex: 0 0 220px;
+    }
+    .home-banner {
+        padding-top: 20px;
+    }
 
 
 
@@ -182,7 +237,7 @@ Xtra Small Screen - Small Mobile
     .home-banner-area {
         display: flex;
         flex-direction: column;
-        padding-bottom: 30px;
+        padding-bottom: 70px;
     }
     .home-banner-area-left {
         order: 2;
@@ -207,9 +262,130 @@ Xtra Small Screen - Small Mobile
     .home-banner-area-left-button a {
         flex: 0 0 200px;
     }
-
-
-
+    .home-what-items {
+        padding-top: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+    .home-what {
+        margin-top: -60px;
+    }
+    .featured-section {
+        margin-top: -45px;
+        padding-bottom: 70px;
+    }
+    .home-what-single-items:nth-child(3)::after {
+        display: none;
+    }
+    .home-what-single-items:nth-child(5)::after {
+        display: none;
+    }
+    .home-what-items {
+        padding-bottom: 70px;
+    }
+    .home-what-heading {
+        padding-top: 40px;
+    }
+    .featured-heading div:nth-child(3) {
+        display: none;
+    }
+    .featured-heading div:first-child {
+        display: none;
+    }
+    .featured-heading {
+        padding-top: 70px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .featured-last-button {
+        display: block;
+        padding-top: 0;
+    }
+    .featured-heading div:nth-child(2) {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .featured-last-button a img {
+        max-width: 250px;
+    }
+    .home-what-heading img {
+        max-width: 280px;
+    }
+    .aboutus-area {
+        grid-template-columns: 1fr;
+        padding-bottom: 60px;
+    }
+    .aboutus-area-first {
+        text-align: center;
+    }
+    .aboutus-section {
+        margin-top: -50px;
+    }
+    .aboutus-area-second {
+        text-align: center;
+        padding-top: 0;
+    }
+    .aboutus-area-content {
+        padding-top: 0;
+    }
+    .aboutus-area-content p {
+        font-size: 15px;
+    }
+    .aboutus-area-content img {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    .ugly-section {
+        margin-top: -50px;
+    }
+    .ugly-area {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 55px;
+        padding-bottom: 70px;
+    }
+    .ugly-area-left {
+        order: 3;
+    }
+    .ugly-area-middle {
+        order: 2;
+    }
+    .ugly-area-right {
+        order: 1;
+    }
+    .ugly-area-right {
+        padding: 0;
+    }
+    .ugly-area-left img {
+        max-width: 220px;
+    }
+    .aboutus-area-first {
+        padding-top: 16px;
+    }
+    .home-footer-top {
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 60px;
+    }
+    .home-footer-section {
+        margin-top: -55px;
+    }
+    .home-footer-content-right p br {
+        display: none;
+    }
+    .home-footer-top-left a img {
+        max-width: 220px;
+        margin: 0 auto;
+    }
+    .home-footer-content-right p {
+        font-size: 15px;
+    }
+    .home-footer-bottom p {
+        font-size: 15px;
+    }
+    .home-banner {
+        padding-top: 0;
+    }
 
 
 }
@@ -239,10 +415,37 @@ Xtra Small Screen - Small Mobile
     .home-banner-area-left-button a img {
         max-width: 190px;
     }
-
-
-
-
-
-    
+    .home-what-items {
+        padding-top: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+    .home-what-single-items::after {
+        display: none;
+    }
+    .featured-section {
+        margin-top: -65px;
+    }
+    .home-what-heading {
+        padding-top: 50px;
+    }
+    .home-what {
+        margin-top: -80px;
+    }
+    .home-footer-top-left a img {
+        max-width: 200px;
+    }
+    .home-footer-content {
+        flex-direction: column;
+        gap: 20px;
+        padding: 12px 15px 20px;
+    }
+    .home-footer-content div:first-child::after {
+        display: none;
+    }
+    .home-footer-content div:nth-child(2) {
+        padding-left: 0;
+    }.home-footer-content div:first-child {
+        padding-right: 0;
+    }
 }

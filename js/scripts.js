@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-    // Featured Slider
+    // Featured Swiper Slider
     const featuredSlider = new Swiper('.featured-slider', {
         slidesPerView: 6,
         spaceBetween: 12,

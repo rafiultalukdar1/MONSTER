@@ -61,14 +61,37 @@ Medium Screen - Others
     .home-footer-content-right p br {
         display: none;
     }
-
-
-
-
-
-
-
-
+    .worktab-section {
+        padding-bottom: 50px;
+    }
+    .menu-logo-right-service img {
+        max-width: 240px;
+    }
+    .work-banner-heading {
+        max-width: 770px;
+        margin-top: 0;
+    }
+    .header-section-work {
+        min-height: 620px !important;
+    }
+    .work-like-area-left {
+        flex: 0 0 405px;
+    }
+    .work-like-area-right a img {
+        max-width: 190px;
+    }
+    .service-area {
+        gap: 12px;
+    }
+    .header-section-service-tow {
+        padding-bottom: 70px;
+    }
+    .service-project-area-left {
+        flex: 0 0 340px;
+    }
+    .service-project-area-right a img {
+        max-width: 190px;
+    }
 
 
 
@@ -191,6 +214,47 @@ Small Screen - Tablate
     .home-banner {
         padding-top: 20px;
     }
+    .worktab-section {
+        padding-bottom: 50px;
+    }
+    .work-banner-heading {
+        margin-top: 0;
+    }
+    .worktab-section-heading ul li {
+        padding: 6px 15px;
+    }
+    .worktab-section-content-box {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .work-like-area {
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    .work-like-area-left {
+        flex: initial;
+    }
+    .service-area {
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .header-section-service-tow {
+        padding-bottom: 70px;
+    }
+    .service-project-area {
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .service-project-area-left {
+        flex: initial;
+    }
+
+
+
+
+
 
 
 
@@ -389,11 +453,66 @@ Xtra Small Screen - Small Mobile
     .home-banner {
         padding-top: 0;
     }
-
-
-
-
-
+    .work-banner-heading {
+        margin-top: 0;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 8px;
+        align-items: center;
+        text-align: center;
+    }
+    .work-banner-heading img {
+        max-width: 270px;
+    }
+    .worktab-section-heading ul li::after {
+        display: none;
+    }
+    .worktab-section-heading ul {
+        row-gap: 8px;
+        column-gap: 12px;
+        margin: 20px 0;
+    }
+    .worktab-section-content-box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .worktab-section {
+        padding-bottom: 70px;
+    }
+    .work-banner-heading p {
+        font-size: 14px;
+    }
+    .work-like-area {
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    .work-like-area-left {
+        flex: initial;
+    }
+    .work-like-area-left img {
+        max-width: 450px;
+    }
+    .work-like-area-right a img {
+        max-width: 220px;
+    }
+    .service-area {
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .header-section-service-tow {
+        padding-bottom: 70px;
+    }
+    .service-project-area {
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+    .service-project-area-left {
+        flex: initial;
+    }
+    .service-project-area-right a img {
+        max-width: 220px;
+    }
 
 
 
@@ -454,10 +573,28 @@ Xtra Small Screen - Small Mobile
     }.home-footer-content div:first-child {
         padding-right: 0;
     }
-
-
-
-
-
+    .worktab-section-content-box {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    .worktab-section {
+        padding-bottom: 70px;
+    }
+    .worktab-section-heading ul li {
+        padding: 6px 16px;
+        font-size: 22px;
+    }
+    .work-like-area-right a img {
+        max-width: 180px;
+    }
+    .service-area {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .service-project-area-right a {
+        margin-top: 8px;
+    }
+    .service-project-area-right a img {
+        max-width: 180px;
+    }
 
 }

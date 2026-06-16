@@ -68,7 +68,7 @@ ul {
     padding: 0; 
     margin: 0;
 }
-
+textarea,
 input,
 button {
     background-color: transparent;
@@ -765,6 +765,11 @@ body.sidebar-open {
 
 .worktab-section-content-box div a img {
     width: 100%;
+    transition: 0.3s;
+}
+
+.worktab-section-content-box div a img:hover {
+    transform: scale(1.03);
 }
 
 .header-section-work {
@@ -916,4 +921,308 @@ body.sidebar-open {
 
 .service-project-area-right a:hover {
     transform: scale(1.03);
+}
+
+
+/* About Page Here */
+.pgabout-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+.pgabout-left img {
+    width: 100%;
+}
+
+.pgabout-right img {
+    width: 100%;
+}
+
+.pgabout-left p {
+    padding-top: 12px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Creative Section */
+.pgabout-crative {
+    padding-top: 48px;
+}
+
+.pgabout-crative-area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.pgabout-crative-area-items {
+    display: flex;
+    gap: 8px;
+    position: relative;
+    max-width: 450px;
+}
+
+.pgabout-crative-area-items div:first-child {
+    flex: 0 0 100px;
+}
+
+.pgabout-crative-area-items h4 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+    font-family: var(--fontGothic);
+    position: relative;
+}
+
+.pgabout-crative-area-items h4::after {
+	position: absolute;
+	content: "";
+	background: url(images/light-border.png);
+	bottom: -16px;
+	display: block;
+	height: 12px;
+	width: 100%;
+	background-repeat: no-repeat;
+	left: 50%;
+	transform: translateX(-50%);
+	background-position: left;
+}
+
+.pgabout-crative-area-items p {
+    padding-top: 22px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.pgabout-crative-area-items::after {
+    position: absolute;
+    content: "";
+    height: calc(100% - 20px);
+    width: 1px;
+    background: #4C4E50;
+    display: block;
+    left: -15px;
+    top: 15px;
+}
+
+.pgabout-crative-area-items:first-child::after {
+    display: none;
+}
+
+.header-section-about {
+    background: url(images/aboutheaderbg.png);
+    /* min-height: 880px; */
+    padding-bottom: 30px;
+    z-index: 3;
+    position: relative;
+}
+
+.about-footer-section {
+    padding-top: 30px;
+}
+
+/* Experience Section */
+.pgabout-experience {
+    background: url(images/about-experienc.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: 100% 100%;
+	width: 100%;
+    min-height: 170px;
+    margin-top: 40px;
+}
+
+.pgabout-experience-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.pgabout-experience-left {
+    flex: 0 0 270px;
+}
+
+.pgabout-experience-right {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.pgabout-experience-items{
+    text-align: center;
+    position: relative;
+}
+
+.pgabout-experience-items p {
+    font-size: 14px;
+    color: #000;
+}
+
+.pgabout-experience-items::after {
+    position: absolute;
+    content: "";
+    height: calc(100% - 20px);
+    width: 1px;
+    background: #000;
+    display: block;
+    left: -15px;
+    top: 15px;
+}
+
+.pgabout-experience-items:first-child::after {
+    display: none;
+}
+
+.pgabout-experience-items img {
+    max-width: 100%;
+}
+
+
+/* Contact Page Here */
+.header-section-contact {
+    background: url(images/contactheaderbg.png);
+}
+
+.pgcontact-banner-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 30px;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.pgcontact-banner-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pgcontact-banner-left img {
+    max-width: 100%;
+}
+
+.pgcontact-contact {
+    padding: 48px;
+    padding-top: 20px;
+    background: url(images/form-bg.png);
+    background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: 100% 100%;
+    max-width: 100%;
+}
+
+.pgcontact-contact img {
+    max-width: 100%;
+}
+
+.pgcontact-contact-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pgcontact-contact-form-devide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    row-gap: 20px;
+}
+
+.pgcontact-contact-form label {
+    font-size: 22px;
+    color: #fff;
+    font-family: var(--fontGothic);
+    font-weight: 400;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.pgcontact-contact-form label span {
+    color: #ACAEAE;
+}
+
+.pgcontact-contact-form textarea,
+.pgcontact-contact-form input {
+    padding: 10px 12px;
+    font-size: 16px;
+    font-family: var(--fontOpen);
+    border: 1px solid #4C4E50;
+    width: 100%;
+    color: #ACAEAE;
+    box-sizing: border-box;
+}
+
+.pgcontact-contact-form textarea::placeholder,
+.pgcontact-contact-form input::placeholder {
+    font-size: 16px;
+    font-family: var(--fontOpen);
+    color: #ACAEAE;
+}
+
+.pgcontact-contact-form textarea:focus,
+.pgcontact-contact-form input:focus {
+    border-color: var(--primaryColor);
+}
+
+.pgcontact-contact-form textarea {
+    min-height: 120px;
+}
+
+.pgcontact-contact-form-button {
+    text-align: end;
+}
+
+.pgcontact-contact-form-button button {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.pgcontact-contact-form-button button:hover {
+    transform: scale(1.03);
+}
+
+.pgcontact-contact-form-button button img {
+    max-width: 340px;
+    width: 100%;
+}
+
+.pgcontact-banner-right {
+    max-width: 100%;
+}
+
+.pgcontact-banner-area-middle {
+    position: absolute;
+    bottom: -20px;
+    left: 25%;
+    z-index: 5;
+}
+
+/* Tea Section Here */
+
+.pgcontact-tea {
+	background: url(images/contact-teea.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: 100% 100%;
+	min-height: 175px;
+	position: relative;
+	z-index: 1;
+	margin-top: -16px;
+}
+
+.pgcontact-tea-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+.pgcontact-tea-area img {
+    max-width: 100%;
 }
